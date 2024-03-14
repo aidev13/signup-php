@@ -1,3 +1,9 @@
+<?php
+require_once 'includes/db_connection.inc.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

@@ -1,5 +1,6 @@
 body {
    margin: 5px;
+   margin-top: 25px;
    color: rgb(24, 24, 24);
    background-color: rgb(255, 255, 255);
 }
@@ -11,7 +12,7 @@ h1 {
 
 h3 {
    font-family:Arial, Helvetica, sans-serif ;
-   font-size: 24px;
+   font-size: 28px;
    margin-bottom: 10px;
 }
 
@@ -25,7 +26,7 @@ h3 {
 
 label {
    font-family: Arial, Helvetica, sans-serif;
-   font-size: 12px;
+   font-size: 16px;
 }
 
 input[type='text'], input[type='password'] {
@@ -33,13 +34,15 @@ input[type='text'], input[type='password'] {
    padding: 5px;
    border-radius: 3px;
    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+   font-size: 14px;
+   min-width: 250px;
 }
 
 .form_grid {
    position: relative;
    padding: 18px;
    display: grid;
-   gap: .4rem;
+   gap: .5rem;
    border-radius: 1rem;
    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

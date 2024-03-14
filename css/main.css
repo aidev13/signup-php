@@ -80,3 +80,11 @@ button {
    border-radius: 5px;
    padding:5px ;
 }
+
+button:hover {
+   box-shadow: rgba(80, 84, 88, 0.2) 0px 8px 24px;
+   transform: scale(1.05);
+   transition: ease .2s;
+   color: white;
+   cursor: pointer;
+}

@@ -23,8 +23,8 @@
          <form action="" method="get" class="form_grid">
             <label for="login_username">Username:</label>
             <input type="text" id="login_username" placeholder="Username..." name="login_username">
-            <label for="login_email">Email:</label>
-            <input type="text" id="login_email" placeholder="Email..." name="login_email">
+            <label for="login_pwd">Password:</label>
+            <input type="password" id="login_pwd" placeholder="Password..." name="login_pwd">
             <button>Login</button>
          </form>
      

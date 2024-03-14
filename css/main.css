@@ -59,6 +59,7 @@ section {
    overflow: hidden;
    line-height: 0;
    transform: rotate(180deg);
+   z-index: -5;
 }
 
 .custom-shape-divider-top-1710430193 svg {
@@ -69,14 +70,14 @@ section {
 }
 
 .custom-shape-divider-top-1710430193 .shape-fill {
-   fill: #1900ff0d;
+   fill: #ff880025;
 }
 
 button {
    margin: auto;
    width: 75px;
    border: none;
-   background-color: rgb(148, 187, 255);
+   background-color: rgb(255, 200, 0);
    border-radius: 5px;
    padding:5px ;
 }

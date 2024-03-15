@@ -3,15 +3,14 @@ body {
    /* margin-top: px; */
    color: rgb(255, 255, 255);
    background-color: rgb(37, 37, 37);
+   font-family:Arial, Helvetica, sans-serif ;
 }
 
 h1 {
-   font-family:Arial, Helvetica, sans-serif ;
    font-size: 30px;
 }
 
 h3 {
-   font-family:Arial, Helvetica, sans-serif ;
    font-size: 28px;
    margin-bottom: 10px;
 }
@@ -96,7 +95,7 @@ section {
 }
 
 .custom-shape-divider-top-1710430194 .shape-fill {
-   fill: #dee5e8;
+   fill: #06aef6a7;
 }
 
 /* ----- curve end ----- */
@@ -137,4 +136,16 @@ button:hover {
    color: black;
    padding: 5px 15px 5px 5px;
    margin-bottom: 15px;
+}
+
+.form_error {
+   color: red;
+   text-align: center;
+   font-size: 25px;
+}
+
+.form_success {
+   color: green;
+   text-align: center;
+   font-size: 25px;
 }

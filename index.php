@@ -1,5 +1,7 @@
 <?php
-require_once 'includes/db_connection.inc.php';
+// require_once 'includes/db_connection.inc.php';
+require_once 'includes/signup_view.inc.php';
+require_once 'includes/config_session.inc.php';
 
 ?>
 
@@ -67,6 +69,10 @@ require_once 'includes/db_connection.inc.php';
       </form>
 
    </div>
+
+   <?php
+   check_signup_errors();
+   ?>
 </body>
 
 </html>

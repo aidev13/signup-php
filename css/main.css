@@ -1,6 +1,6 @@
 body {
    margin: 5px;
-   margin-top: 25px;
+   /* margin-top: px; */
    color: rgb(255, 255, 255);
    background-color: rgb(37, 37, 37);
 }
@@ -116,4 +116,25 @@ button:hover {
    transition: ease .2s;
    color: white;
    cursor: pointer;
+}
+
+.nav_placement {
+   display: flex; 
+   justify-content: flex-end;
+   margin-right: 35px;
+}
+
+.navbar {
+   display: flex;
+   width: 350px;
+   height: 35px;
+   border-radius: 30px;
+   border: none;
+   background-color: white;
+   box-shadow: rgba(80, 84, 88, 0.46) 0px 8px 24px;
+   align-items: center;
+   justify-content: flex-end;
+   color: black;
+   padding: 5px 15px 5px 5px;
+   margin-bottom: 15px;
 }

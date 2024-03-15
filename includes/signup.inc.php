@@ -7,8 +7,7 @@ $signup_email = $_POST['signup_email'];
 
 try {
    require_once 'db_connection.inc.php';
-   
-
+    
 } catch (PDOException $e) {
    die('Query error: ' . $e->getMessage());
 }

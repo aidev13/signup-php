@@ -9,6 +9,6 @@ try {
    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
    echo "&#x2705";
 } catch (PDOException $e) {
-   echo "&#x274c" . "<br>";
+   echo "&#x274c ";
    die("Connection Failed: " . $e->getMessage());
 }

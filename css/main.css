@@ -51,6 +51,9 @@ section {
    position: relative;
 }
 
+/* ----- curves start-----*/
+
+/* curve 1 */
 .custom-shape-divider-top-1710430193 {
    position: absolute;
    top: 0;
@@ -70,14 +73,39 @@ section {
 }
 
 .custom-shape-divider-top-1710430193 .shape-fill {
-   fill: #ff880025;
+   fill: #17aaff;
 }
+
+/* curve 2 */
+.custom-shape-divider-top-1710430194 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+   z-index: -10;
+}
+
+.custom-shape-divider-top-1710430194 svg {
+   position: relative;
+   display: block;
+   width: calc(100% + 2px);
+   height: 250px;
+}
+
+.custom-shape-divider-top-1710430194 .shape-fill {
+   fill: #dee5e8;
+}
+
+/* ----- curve end ----- */
 
 button {
    margin: auto;
    width: 75px;
    border: none;
-   background-color: rgb(255, 200, 0);
+   background-color: rgb(0, 140, 255);
    border-radius: 5px;
    padding:5px ;
 }

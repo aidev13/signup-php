@@ -32,7 +32,7 @@ require_once 'includes/db_connection.inc.php';
    <div class="center_it">
       
          <h3>Login</h3>
-         <form action="" method="get" class="form_grid">
+         <form action="includes/login.inc.php" method="get" class="form_grid">
             <label for="login_username">Username:</label>
             <input type="text" id="login_username" placeholder="Username..." name="login_username">
             <label for="login_pwd">Password:</label>
@@ -48,7 +48,7 @@ require_once 'includes/db_connection.inc.php';
    <div class="center_it">
       
          <h3>Sign up</h3>
-         <form action="" method="get" class="form_grid">
+         <form action="includes/signup.inc.php" method="post" class="form_grid">
             <label for="signup_username">Username:</label>
             <input type="text" id="signup_username" placeholder="Enter a username..." name="signup_username">
 

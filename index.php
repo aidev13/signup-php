@@ -56,14 +56,9 @@ require_once 'includes/config_session.inc.php';
 
       <h3>Sign up</h3>
       <form action="includes/signup.inc.php" method="post" class="form_grid">
-         <label for="signup_username">Username:</label>
-         <input type="text" id="signup_username" placeholder="Enter a username..." name="signup_username">
-
-         <label for="pwd">Password:</label>
-         <input type="password" id="pwd" placeholder="Enter a password..." name="pwd">
-
-         <label for="signup_email">Email:</label>
-         <input type="text" id="signup_email" placeholder="Enter an email..." name="signup_email">
+         <?php
+         signup_inputs();
+         ?>
          <button>Sign up</button>
 
       </form>

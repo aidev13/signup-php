@@ -10,6 +10,7 @@ function signup_inputs()
       <input type="text" id="signup_username" placeholder="Enter a username..." name="signup_username" value="'. $_SESSION['signup_data']['username'] .'">';
       unset($_SESSION['signup_data']['username']);
    } else {
+      unset($_SESSION['signup_data']['username']);
       echo
       '<label for="signup_username">Username:</label>
       <input type="text" id="signup_username" placeholder="Enter a username..." name="signup_username">';
@@ -26,6 +27,7 @@ function signup_inputs()
       <input type="text" id="signup_email" placeholder="Enter an email..." name="signup_email" value="'. $_SESSION['signup_data']['email'] .'">';
       unset($_SESSION['signup_data']['email']);
    } else {
+      unset($_SESSION['signup_data']['email']);
       echo 
       '<label for="signup_email">Email:</label>
       <input type="text" id="signup_email" placeholder="Enter a email..." name="signup_email">';

@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    $signup_email = $_POST['signup_email'];
 
    try {
-      require_once 'db_connection.inc.php';
+      require_once '../db_connection.inc.php';
       require_once 'signup_model.inc.php';
       require_once 'signup_contr.inc.php';
 
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
          $errors["email_registered"] = 'E-mail is already registered...';
       }
 
-      require_once 'config_session.inc.php';
+      require_once '../config_session.inc.php';
 
       if ($errors) {
          $_SESSION['errors_signup'] = $errors;
@@ -38,13 +38,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
          $_SESSION['signup_data'] = $signup_data;
          
-         header ('Location: ../index.php');
+         header ('Location: ../../index.php');
          die();
       }
 
       // CREATE USER QUERY
       create_user($pdo, $pwd, $signup_email, $signup_username);
-      header("Location: ../index.php?signup=success");
+      header("Location: ../../index.php?signup=success");
 
       $pdo = null;
       $stmt = null;
@@ -55,6 +55,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       die('Query error: ' . $e->getMessage());
    }
 } else {
-   header("Location: ../index.php");
+   header("Location: ../../index.php");
    die();
 }

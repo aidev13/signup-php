@@ -1,2 +1,2 @@
 # signup-php
-An entire PHP sign up system written in PHP
+An entire sign up system written in PHP

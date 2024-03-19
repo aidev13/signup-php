@@ -1,6 +1,6 @@
 <?php
 
-$dsn = 'mysql:host=127.0.0.1;dbname=project_signup_db';
+$dsn = 'mysql:host=127.0.0.1;dbname=phplogin_db';
 $db_username = 'root';
 $db_password = '';
 

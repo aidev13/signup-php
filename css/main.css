@@ -44,6 +44,8 @@ input[type='text'], input[type='password'] {
    gap: .5rem;
    border-radius: 1rem;
    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   /* background-color: #ffffff34; */
+   border: 1px solid rgba(255, 255, 255, 0.464);
 }
 
 section {
@@ -53,7 +55,7 @@ section {
 /* ----- curves start-----*/
 
 /* curve 1 */
-.custom-shape-divider-top-1710430193 {
+.custom-shape-divider-top-1 {
    position: absolute;
    top: 0;
    left: 0;
@@ -64,19 +66,19 @@ section {
    z-index: -5;
 }
 
-.custom-shape-divider-top-1710430193 svg {
+.custom-shape-divider-top-1 svg {
    position: relative;
    display: block;
    width: calc(100% + 2px);
    height: 225px;
 }
 
-.custom-shape-divider-top-1710430193 .shape-fill {
+.custom-shape-divider-top-1 .shape-fill {
    fill: #17aaff;
 }
 
 /* curve 2 */
-.custom-shape-divider-top-1710430194 {
+.custom-shape-divider-top-2 {
    position: absolute;
    top: 0;
    left: 0;
@@ -87,15 +89,38 @@ section {
    z-index: -10;
 }
 
-.custom-shape-divider-top-1710430194 svg {
+.custom-shape-divider-top-2 svg {
    position: relative;
    display: block;
    width: calc(100% + 2px);
    height: 250px;
 }
 
-.custom-shape-divider-top-1710430194 .shape-fill {
-   fill: #06aef6a7;
+.custom-shape-divider-top-2 .shape-fill {
+   fill: #dbf4ffc0;
+}
+
+/* curve 3 */
+.custom-shape-divider-top-3 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+   z-index: -15;
+}
+
+.custom-shape-divider-top-3 svg {
+   position: relative;
+   display: block;
+   width: calc(100% + 2px);
+   height: 300px;
+}
+
+.custom-shape-divider-top-3 .shape-fill {
+   fill: #333333;
 }
 
 /* ----- curve end ----- */

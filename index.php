@@ -1,7 +1,9 @@
 <?php
-// require_once 'includes/db_connection.inc.php';
-require_once 'includes/signup_view.inc.php';
+require_once 'includes/db_connection.inc.php';
+require_once 'includes/signup/signup_view.inc.php';
 require_once 'includes/config_session.inc.php';
+// echo "<br>";
+// var_dump($_SERVER['REQUEST_METHOD'] === 'POST');
 
 ?>
 
@@ -24,13 +26,19 @@ require_once 'includes/config_session.inc.php';
       </nav>
    </div>
 
-   <div class="custom-shape-divider-top-1710430193">
+   <div class="custom-shape-divider-top-1">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
       </svg>
    </div>
 
-   <div class="custom-shape-divider-top-1710430194">
+   <div class="custom-shape-divider-top-2">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+         <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+      </svg>
+   </div>
+
+   <div class="custom-shape-divider-top-3">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
       </svg>
@@ -39,15 +47,19 @@ require_once 'includes/config_session.inc.php';
    <div class="center_it">
 
       <h3>Login</h3>
-      <form action="includes/login.inc.php" method="get" class="form_grid">
-         <label for="login_username">Username:</label>
-         <input type="text" id="login_username" placeholder="Username..." name="login_username">
+      <form action="includes/login/login.inc.php" method="get" class="form_grid">
+         <label for="username">Username:</label>
+         <input type="text" id="username" placeholder="Username..." name="username">
          <label for="login_pwd">Password:</label>
-         <input type="password" id="login_pwd" placeholder="Password..." name="login_pwd">
+         <input type="password" id="login_pwd" placeholder="Password..." name="pwd">
          <button>Login</button>
       </form>
 
    </div>
+
+   <?php
+      
+   ?>
 
    <br>
    <br>
@@ -55,7 +67,7 @@ require_once 'includes/config_session.inc.php';
    <div class="center_it">
 
       <h3>Sign up</h3>
-      <form action="includes/signup.inc.php" method="post" class="form_grid">
+      <form action="includes/signup/signup.inc.php" method="post" class="form_grid">
          <?php
          signup_inputs();
          ?>

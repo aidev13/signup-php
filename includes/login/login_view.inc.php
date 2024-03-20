@@ -18,3 +18,12 @@ function check_login_errors()
       echo '<p class="form_success">Login Success, Welcome Back!</p>';
    }
 }
+
+
+function output_username() {
+   if (isset($_SESSION['user_id'])) {
+      echo 'Hello ' . $_SESSION['user_username'] . '!';
+   } else {
+      echo 'Login to get started';
+   }
+}

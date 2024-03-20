@@ -2,8 +2,8 @@
 require_once 'includes/db_connection.inc.php';
 require_once 'includes/signup/signup_view.inc.php';
 require_once 'includes/config_session.inc.php';
-// echo "<br>";
 // var_dump($_SERVER['REQUEST_METHOD'] === 'POST');
+require_once 'includes/login/login_view.inc.php';
 
 ?>
 
@@ -20,11 +20,20 @@ require_once 'includes/config_session.inc.php';
 </head>
 
 <body>
+
    <div class="nav_placement">
       <nav class='navbar'>
-         <h5>Login | Signup</h5>
+         <form action="includes/logout/logout.inc.php">
+            <button class="logoutBtn">Log out</button>
+         </form>
       </nav>
    </div>
+
+   <h3>
+      <?php
+      output_username();
+      ?>
+   </h3>
 
    <div class="custom-shape-divider-top-1">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -45,7 +54,6 @@ require_once 'includes/config_session.inc.php';
    </div>
 
    <div class="center_it">
-
       <h3>Login</h3>
       <form action="includes/login/login.inc.php" method="get" class="form_grid">
          <label for="username">Username:</label>
@@ -54,18 +62,16 @@ require_once 'includes/config_session.inc.php';
          <input type="password" id="login_pwd" placeholder="Password..." name="pwd">
          <button>Login</button>
       </form>
-
    </div>
 
    <?php
-      
+   check_login_errors();
    ?>
 
    <br>
    <br>
 
    <div class="center_it">
-
       <h3>Sign up</h3>
       <form action="includes/signup/signup.inc.php" method="post" class="form_grid">
          <?php
@@ -74,12 +80,12 @@ require_once 'includes/config_session.inc.php';
          <button>Sign up</button>
 
       </form>
-
    </div>
 
    <?php
    check_signup_errors();
    ?>
+
 </body>
 
 </html>

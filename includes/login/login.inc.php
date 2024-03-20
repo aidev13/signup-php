@@ -1,13 +1,14 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
-   $userrname = $_POST['username'];
-   $pwd = $_POST['pwd'];
+   $username = $_GET['username'];
+   $pwd = $_GET['pwd'];
 
    try {
       require_once '../db_connection.inc.php';
       require_once 'login_model.inc.php';
       require_once 'login_contr.inc.php';
+      require_once 'login_view.inc.php';
 
       //ERROR HANDLERS
       $errors = [];
@@ -30,7 +31,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       if ($errors) {
          $_SESSION['errors_login'] = $errors;
-
          header('Location: ../../index.php');
          die();
       }
@@ -44,11 +44,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       $_SESSION['last_regeneration'] = time();
 
-      header("Location: ../../idex.php?login=success");
+      header("Location: ../../index.php?login=success");
+
+      $stmt = null;
+      $pdo = null;
+      die();
    } catch (PDOException $e) {
       die('Query error: ' . $e->getMessage());
    }
 } else {
-   header("Location: ../index.php");
+   header("Location: ../../index.php");
    die();
 }

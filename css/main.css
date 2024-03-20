@@ -163,6 +163,10 @@ button:hover {
    margin-bottom: 15px;
 }
 
+form .logoutBtn {
+   border-radius: 15px;
+}
+
 .form_error {
    color: red;
    text-align: center;
